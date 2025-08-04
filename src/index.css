@@ -1,0 +1,39 @@
+/* src/index.css */
+
+/* 全局浅色 */
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f0f2f5;
+  color: #222;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    sans-serif;
+}
+
+/* 把 ChatSlot 填满父容器（父容器在 App.jsx 里是 flex:1） */
+.chat-slot {
+  width: 100%;
+  height: 100%;
+}
+
+/* 某些版本会给内部容器加 max-width，这里强制拉满 */
+.chat-slot > * {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+}
+
+/* 你页面里的标题样式可按需覆盖 */
+h1 {
+  margin: 0;
+}
