@@ -37,3 +37,7 @@ body {
 h1 {
   margin: 0;
 }
+/* 隐藏错误提示 */
+.index-module___content___FxMEM {
+  display: none !important;
+}
